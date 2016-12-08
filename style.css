@@ -1,0 +1,31 @@
+header {
+  margin-right:15px;
+}
+
+h1 {
+  font-size:160px;
+  display:inline-block;
+  margin: 0 0 0 20px;
+
+}
+
+.boxHeader{
+  width:150px;
+  height:150px;
+  border:1px black solid;
+  float:right;
+  margin:15px;
+
+}
+
+#redBox {
+  background: red;
+}
+
+#blueBox {
+  background: blue;
+}
+
+#yellowBox {
+  background: yellow;
+}
