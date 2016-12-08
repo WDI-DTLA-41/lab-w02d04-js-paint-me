@@ -26,17 +26,22 @@ body {
 }
 
 .divTable {
-  border: 2px solid black;
+  border: 2px solid yellow;
 }
 
 
-.selected-color {
+.select-color {
   border: 8px solid black;
 }
 
 .divTableCell {
   width: 150px;
   height: 125px;
-  border: 2px solid black;
+  border: 2px solid red;
   display: inline-block;
+  margin: 4px;
+}
+
+.divTableRow {
+  border: 2px solid blue;
 }
