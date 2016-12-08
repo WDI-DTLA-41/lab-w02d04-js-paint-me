@@ -1,0 +1,70 @@
+body
+{
+  background: magenta;
+}
+
+.squaregrid {
+  width: 600px;
+  height: 600px;
+  /*background: red;*/
+  margin: 0 auto;
+/*  overflow: auto;*/
+/*  position: relative;
+*//*  align: center;*/
+}
+
+.squares {
+  background: white;
+  width: 145px;
+  height: 145px;
+  margin: 0 auto;
+  float: left;
+  display: inline-block;
+  border: .5px solid black;
+
+}
+
+.selectcolor {
+  position: relative;
+  width: 50px;
+  border: 3px solid black;
+  padding: 10px;
+  height: 50px;
+/*  float: right;*/
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  }
+
+.colors {
+  /*padding: 20px;
+  margin: 0 auto;
+*/
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
