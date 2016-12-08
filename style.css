@@ -3,8 +3,9 @@ body {
 }
 
 #pallete-container {
-  float: right;
+  text-align: right;
   display: inline;
+  margin:0 15px;
 }
 
 .pallete-red {
@@ -13,6 +14,18 @@ body {
   background: red;
   float:right;
   margin: 10;
+}
+
+.pallete-red:active {
+  border: 4px solid black;
+}
+
+.pallete-blue:active {
+  border: 4px solid black;
+}
+
+.pallete-green:active {
+  border: 4px solid black;
 }
 
 .pallete-blue {
@@ -31,6 +44,39 @@ body {
 
 }
 
+#grid-container {
+  clear: both;
+}
+
+td {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
 .clear {
 
 }
+
+#button-container {
+  margin: 20px;
+  text-align: right;
+}
+
+
+
+
+
+
