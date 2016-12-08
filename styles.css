@@ -1,0 +1,146 @@
+
+
+body {
+
+}
+section {
+
+    background: #cccccc;
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+#container {
+
+.red {
+  background: red;
+  width: 200px;
+  height: 30px;
+}
+.yellow {
+  background: yellow;
+  width: 200px;
+  height: 30px;
+}
+
+}
+
+.box-one {
+  background: red;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+.box-two {
+  background: yellow;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+
+}
+
+.box-three {
+  background: orange;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+
+}
+
+.box-four {
+  background: red;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+  clear: both;
+
+}
+
+.box-five {
+  background: yellow;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+.box-six {
+  background: orange;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+.box-seven {
+  background: red;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+  clear: both;
+
+}
+
+.box-eight {
+  background: yellow;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+.box-nine {
+  background: orange;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+button.clear {
+  margin: 20px 20px 20px 20px;
+  height: 30px;
+  width: 200px;
+  float: left;
+  clear: both;
+}
+button.newGrid {
+  margin: 20px 20px 20px 20px;
+  height: 30px;
+  width: 200px;
+  float: left;
+
+}
+
+
