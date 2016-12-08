@@ -1,0 +1,27 @@
+td {
+  border: 1px lightgrey solid;
+  border-collapse: collapse;
+  height: 70px;
+  width: 70px;
+}
+
+tr {
+  /*width: 90%;*/
+}
+
+#grid {
+  border-collapse: collapse;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.red {
+  background: red;
+}
+
