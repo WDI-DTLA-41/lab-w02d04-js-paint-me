@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+}
+
+.colors {
+  position: absolute;
+  left: 215px;
+}
+
+.red {
+  background: red;
+  color: red;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.blue {
+  background: blue;
+  color: blue;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.yellow {
+  background: yellow;
+  color: yellow;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.board {
+  max-width: 450px;
+  height: 550px;
+  padding: 100px 0 0 0;
+  position: absolute;
+  left: 20%;
+
+}
+.grid {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+#selected {
+  border: 5px solid black;
+}
