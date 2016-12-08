@@ -1,3 +1,60 @@
 body {
   background: lightblue;
 }
+
+h1 {
+  color: white;
+  display: inline-block;
+  margin: 50px;
+}
+
+.paints {
+  background: pink;
+  padding-right: 90px;
+}
+
+.red {
+  height: 50px;
+  width:50px;
+  background: red;
+  border: 5px solid black;
+
+}
+
+.blue {
+  height: 50px;
+  width:50px;
+  background: blue;
+  border: 5px solid black;
+
+}
+
+.yellow {
+  height: 50px;
+  width:50px;
+  background: yellow;
+  border: 5px solid black;
+}
+
+div {
+  display:inline-block;
+  overflow: auto;
+}
+
+table {
+/*  height: 80%;
+  width: 80%;*/
+  background: white;
+  border: 5px dotted gold;
+}
+
+td {
+  height: 80px;
+  width: 80px;
+  background: white;
+  border: 2px solid grey;
+}
+
+button {
+margin-bottom: 5px;
+}
