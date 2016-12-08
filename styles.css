@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+}
+
+.brush-color {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 0 0 20px 5px;
+  display: inline-block;
+  position: relative;
+  /*margin: 0 auto;*/
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.colors {
+  width: 808px;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#red {
+  background: red;
+}
+
+#blue {
+  background: blue;
+}
+
+.clicked {
+  border: 5px solid black;
+}
+
+.canvas-wrapper {
+  width: 900px;
+  font-size: 0px;
+  margin: 0 auto;
+}
+
+.grid {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+}
+
+
