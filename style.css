@@ -1,0 +1,56 @@
+#header {
+  background: linear-gradient(to left, red,green,blue,black,white);
+  height: 70px;
+  margin: 25px 10px 75px 10px;
+  padding: 25px;
+}
+
+.colorContainer {
+/*float: right;*/
+margin: 0 500px;
+}
+
+.red {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: red;
+}
+
+.green {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: green;
+}
+
+.blue{
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: blue;
+}
+
+.black {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: black;
+}
+
+table {
+  clear: both;
+  margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 100px;
+}
