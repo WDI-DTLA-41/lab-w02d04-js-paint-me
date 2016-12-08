@@ -2,6 +2,8 @@
 
 A client would like you to build a simple painting app.
 
+# MVP
+
 When a user visits the site they should see
   - the text "Paint me"
   - a series of colored boxes
@@ -13,6 +15,8 @@ When the user clicks a colored box and clicks on a square in the grid
 
 When the user has colored some boxes and clicks clear
   - the grid's color should return to white
+
+![](assets/asset1.png?raw=true)
 
 # 💡Feature requests
 
