@@ -23,7 +23,6 @@ var handleCanvas = function(e) {
   console.log('canvas click');
   if (first && first.classList.contains('selected')) {
     e.target.classList.toggle('first-color');
-    console.log('first color selected');
   }
   if (second && second.classList.contains('selected')) {
     e.target.classList.toggle('second-color');
