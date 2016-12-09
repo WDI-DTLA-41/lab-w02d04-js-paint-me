@@ -9,28 +9,17 @@ body {
   display: inline-block;
 }
 
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
-.brown {
-  background-color: brown;
-}
-
 .color-selectors {
   border: 2px solid black;
 }
 
 .divTable {
   border: 2px solid yellow;
+  display: inline-block;
 }
 
 
-.select-color {
+.active {
   border: 8px solid black;
 }
 
@@ -44,4 +33,5 @@ body {
 
 .divTableRow {
   border: 2px solid blue;
+  display: inline-block;
 }

@@ -9,9 +9,15 @@ var selectColor = function (event){
   console.log(event);
   //console.log(event);
   //event.target.classList.add('select-color');
-  //event.target.classList.toggle('select-color');
-  event.target.style.border = "8px solid black";
-  currentColor = event.target.classList[0];
+  for (var i = 0; i < $colSelectors.children.length; i++){
+    if ($colSelectors.children[i].classList.contains('active')){
+      $colSelectors.children[i].classList.remove('active');
+    };
+  }
+  event.target.classList.toggle('active');
+  //event.target.style.border = "8px solid black";
+
+  currentColor = event.target.style.backgroundColor;
 //style.border = "8px solid black";
 };
 
@@ -33,19 +39,13 @@ $divTable = document.querySelector('.divTable');
 $divTable.addEventListener('click', applyColor);
 
 
-$test = document.querySelector('.divTableCell')
-// .select-color {
-//   border: 8px solid black;
-// }
-
-
 
 // Clear grid function
 var clearGrid = function (){
   for (i = 0; i < $divTableCells.length; i++) {
-    $divTableCells[i].style.backgroundColor = null;
-}
-}
+    $divTableCells[i].style.backgroundColor = "white";
+  };
+};
 
 
 // Clear Grid
