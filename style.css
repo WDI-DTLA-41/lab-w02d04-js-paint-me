@@ -58,3 +58,12 @@ td {
 button {
 margin-bottom: 5px;
 }
+
+p {
+  display: inline-block;
+}
+
+/*td: hover {
+color:green;
+cursor: pointer;
+}*/
