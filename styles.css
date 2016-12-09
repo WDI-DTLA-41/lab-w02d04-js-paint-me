@@ -5,62 +5,45 @@ body {
 }
 section {
 
-    background: #cccccc;
-    width: 100%;
-    height: 600px;
+    background: #999999;
+    width: 480px;
+    height: 650px;
     display: block;
 }
 #container {
-
-.red {
-  background: red;
-  width: 200px;
-  height: 30px;
 }
-.yellow {
-  background: yellow;
-  width: 200px;
-  height: 30px;
-}
-
-}
-
-.box-one {
-  background: red;
+.lightBlueBox {
+  background: lightblue;
   border: 1px solid black;
-  margin: 20px 20px 20px 20px;
-  padding: 10px auto;
-  height: 100px;
-  width: 100px;
-  float: left;
-
-}
-
-.box-two {
-  background: yellow;
   border: 1px solid black;
-  margin: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
   padding: 10px auto;
-  height: 100px;
-  width: 100px;
-  float: left;
-
+  height: 50px;
+  width: 50px;
+  display: inline;
+  float: right;
 
 }
-
-.box-three {
-  background: orange;
+.blueBox {
+  background: blue;
   border: 1px solid black;
-  margin: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
   padding: 10px auto;
-  height: 100px;
-  width: 100px;
-  float: left;
-
-
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+.greenBox {
+  background: green;
+  border: 1px solid black;
+  margin: 10px 10px 10px 10px;
+  padding: 10px auto;
+  height: 50px;
+  width: 50px;
+  float: right;
 }
 
-.box-four {
+#box-one {
   background: red;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -72,7 +55,7 @@ section {
 
 }
 
-.box-five {
+#box-two {
   background: yellow;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -81,9 +64,10 @@ section {
   width: 100px;
   float: left;
 
+
 }
 
-.box-six {
+#box-three {
   background: orange;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -91,10 +75,9 @@ section {
   height: 100px;
   width: 100px;
   float: left;
-
 }
 
-.box-seven {
+#box-four {
   background: red;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -106,7 +89,7 @@ section {
 
 }
 
-.box-eight {
+#box-five {
   background: yellow;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -117,7 +100,7 @@ section {
 
 }
 
-.box-nine {
+#box-six {
   background: orange;
   border: 1px solid black;
   margin: 20px 20px 20px 20px;
@@ -128,19 +111,61 @@ section {
 
 }
 
-button.clear {
+#box-seven {
+  background: red;
+  border: 1px solid black;
   margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+  clear: both;
+
+}
+
+#box-eight {
+  background: yellow;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+#box-nine {
+  background: orange;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 10px auto;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+.clear {
+  margin: 20px 10px 20px 20px;
   height: 30px;
   width: 200px;
+  display: block;
   float: left;
   clear: both;
 }
-button.newGrid {
+.newGrid {
   margin: 20px 20px 20px 20px;
   height: 30px;
   width: 200px;
+  display: block;
   float: left;
 
+}
+.chgColor {
+  margin: 10px 10px 10px 10px;
+  height: 30px;
+  width: 150px;
+  display: block;
 }
 
 
