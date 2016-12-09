@@ -1,5 +1,7 @@
 console.log("Finger painting with the insane");
 
+
+
 // set querySelectors
 var tbody = document.querySelector('tbody');
 var palleteContainer = document.querySelector('#pallete-container');
@@ -10,6 +12,12 @@ var palleteBlue = document.querySelector('.pallete-blue');
 var palleteClear = document.querySelectorAll('.clear');
 var buttonClass
 var buttonContainer = document.querySelector('#button-container');
+var inputWidthClass = document.querySelector('.Width');
+var inputHeightClass = document.querySelector('.Height');
+
+
+
+
 // create a function to create Grid Table
 // var createTable = function() {
   for(var i = 0; i < 3; i++) {
@@ -25,6 +33,18 @@ var buttonContainer = document.querySelector('#button-container');
     tbody.appendChild(tr);
   }
 
+
+
+  var inputWidth = document.createElement('input');
+  var inputHeight = document.createElement('input');
+  inputWidth.type = 'number';
+  inputHeight.type = 'number';
+  inputWidth.setAttribute('placeholder','Width');
+  inputHeight.setAttribute('placeholder', 'Height');
+  inputWidth.setAttribute('class', 'Width');
+  inputHeight.setAttribute('class', 'Height');
+  buttonContainer.appendChild(inputWidth);
+  buttonContainer.appendChild(inputHeight);
 
 
 
@@ -49,13 +69,18 @@ var handleColorGrid = function(event) {
   }
 }
 
+
+
 var handleColorTag = function(event) {
   console.log(event.target.classList);
   buttonClass = event.target.classList;
   gridContainer.addEventListener('click', handleColorGrid);
 }
 
+
+
 var handleClearGrid = function(event) {
+  event.stopPropagation();
   var tdAll = document.querySelectorAll('td');
   console.log(tdAll);
    for(var i = 0; i < tdAll.length; i++) {
@@ -64,6 +89,9 @@ var handleClearGrid = function(event) {
 }
 
 
+
+var handleNewGrid = function(event) {
+}
 
 
 
@@ -74,3 +102,4 @@ var handleClearGrid = function(event) {
 // event listener for clicks
 palleteContainer.addEventListener('click',handleColorTag);
 buttonContainer.addEventListener('click',handleClearGrid);
+buttonContainer.addEventListener('click',handleNewGrid);

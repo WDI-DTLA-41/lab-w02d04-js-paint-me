@@ -5,7 +5,9 @@ body {
 #pallete-container {
   text-align: right;
   display: inline;
-  margin:0 15px;
+  height: 100px;
+  margin:0 30px;
+  padding: 20px;
 }
 
 .pallete-red {
@@ -13,7 +15,7 @@ body {
   width: 50px;
   background: red;
   float:right;
-  margin: 10;
+  margin: 0px;
 }
 
 .pallete-red:active {
@@ -46,10 +48,12 @@ body {
 
 #grid-container {
   clear: both;
+  margin: 20px;
 }
 
 table {
   border-collapse: collapse;
+  margin: 20px;
 }
 
 td {
