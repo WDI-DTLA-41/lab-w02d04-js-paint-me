@@ -1,0 +1,76 @@
+body {
+  background-color: white;
+}
+
+.brush-color {
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  margin: 0 0 20px 5px;
+  display: inline-block;
+  position: relative;
+  /*margin: 0 auto;*/
+  float: right;
+}
+
+/*.brush-color:focus {
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  border: 0px;
+}*/
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.colors {
+  width: 808px;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#red {
+  background: red;
+}
+
+#blue {
+  background: blue;
+}
+
+.clicked {
+  border: 3px solid;
+  /*border-radius: 7px;*/
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.canvas-wrapper {
+  width: 60%;
+  font-size: 0px;
+  margin: 0 auto;
+  /*margin-left: -1px;*/
+}
+
+.grid {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  display: block;
+  float: left;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+/*Everything below is test div in grid*/
+
+/*.cell {
+  width: 100px;
+  height: 100px;
+}*/
+
