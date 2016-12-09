@@ -1,0 +1,109 @@
+body {
+  background: #BCB9BF;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background: linear-gradient(to right, red,green,blue,black,white);
+  height: 70px;
+  margin-right: 1%;
+  padding: 25px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 0px;
+  font-size: 30pt;
+}
+
+button {
+position: relative;
+left: 47%;
+margin: 25px 0 25px 0;
+}
+button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+h2 {
+  padding: 0 10px 0 10px;
+}
+
+.colorContainer {
+  position: relative;
+  left: 36%;
+}
+
+.red {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: red;
+cursor: pointer;
+}
+.red:hover {
+  border: 2px solid white;
+}
+
+.green  {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: green;
+cursor: pointer;
+}
+.green:hover {
+  border: 2px solid white;
+}
+
+.blue{
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: blue;
+cursor: pointer;
+}
+.blue:hover {
+  border: 2px solid white;
+}
+
+.black {
+width: 100px;
+height: 100px;
+float: left;
+border: 1px solid black;
+background: black;
+cursor: pointer;
+}
+.black:hover {
+  border: 2px solid white;
+}
+
+table {
+  clear: both;
+  position: relative;
+  left: 22%;
+}
+
+th, td {
+    border: 1px solid black;
+    background: white;
+}
+
+th, td {
+    padding: 100px;
+}
+
+td:hover {
+ border: 2px solid black;
+ cursor: pointer;
+}
+
+
