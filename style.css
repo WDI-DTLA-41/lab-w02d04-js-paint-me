@@ -29,6 +29,9 @@ h1 {
 .yellow {
   background: yellow;
 }
+.white {
+  background: white;
+}
 .clicked {
   border: 3px solid white;
 }
