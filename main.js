@@ -29,7 +29,7 @@ var changeColor = function(event) {
   }  if (color === "blue") {
     event.target.style.backgroundColor = "blue";
   }  if (color === "yellow") {
-    event.target.style.backgroundColor = "yello";
+    event.target.style.backgroundColor = "yellow";
   }
   console.log(event.target.style.backgroundColor);
 }
