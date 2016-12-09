@@ -11,6 +11,7 @@ body {
 }
 
 .pallete-red {
+  border: 1px solid black;
   height: 50px;
   width: 50px;
   background: red;
@@ -31,6 +32,7 @@ body {
 }
 
 .pallete-blue {
+  border: 1px solid black;
   height: 50px;
   width: 50px;
   background: blue;
@@ -39,6 +41,7 @@ body {
 }
 
 .pallete-green {
+  border: 1px solid black;
   height: 50px;
   width: 50px;
   background: green;
