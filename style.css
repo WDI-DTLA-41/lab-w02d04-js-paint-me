@@ -1,0 +1,93 @@
+body {
+  background: beige;
+}
+
+#pallete-container {
+  text-align: right;
+  display: inline;
+  height: 100px;
+  margin:0 30px;
+  padding: 20px;
+}
+
+.pallete-red {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background: red;
+  float:right;
+  margin: 0px;
+}
+
+.pallete-red:active {
+  border: 4px solid black;
+}
+
+.pallete-blue:active {
+  border: 4px solid black;
+}
+
+.pallete-green:active {
+  border: 4px solid black;
+}
+
+.pallete-blue {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background: blue;
+  float: right;
+  margin: 0 10px;
+}
+
+.pallete-green {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background: green;
+  float: right;
+
+}
+
+#grid-container {
+  clear: both;
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+td {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.clear {
+  background: beige;
+}
+
+#button-container {
+  margin: 20px;
+  text-align: right;
+}
+
+
+
+
+
+
