@@ -32,9 +32,17 @@ var clear = function(event) {
   }
 }
 
+// get width of cell from CSS stylesheet
+var cell = document.querySelector('.cell');
+var cellStyles = window.getComputedStyle(cell);
+var cellWidthValue = cellStyles.getPropertyValue('width'); // 200px
+//get substring from 0 to P using indexOf to return 200
+var cellWidth = cellWidthValue.substring(0, cellWidthValue.indexOf('p'));
+console.log(cellWidth)
+
 var createGrid = function(event) {
   var totalDivs = $width.value * $height.value;
-  var gridWidth = ($width.value * 200) + ($width.value * 2);
+  var gridWidth = ($width.value * cellWidth) + (parseInt($width.value));
   console.log(gridWidth)
   $grid.innerHTML = '';
   for (var i =0; i<totalDivs; i++) {
@@ -45,8 +53,10 @@ var createGrid = function(event) {
 
 $create.addEventListener('click', createGrid);
 $selectors.addEventListener('click', selectColor);
-$grid.addEventListener('mouseover', changeColor);
+$grid.addEventListener('click', changeColor);
 $clear.addEventListener('click', clear);
+
+
 
 
 
