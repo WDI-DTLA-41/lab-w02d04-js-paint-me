@@ -6,6 +6,7 @@ var third = document.querySelector('.third-color');
 var picker = document.querySelector('.picker')
 var selected = document.querySelector('.selected');
 var canvas = document.querySelector('.canvas');
+var sq = document.querySelectorAll('.sq');
 
 var btnClr = document.querySelector('.clr-btn');
 var btnNewGrid = document.querySelector('.newgrid-btn');
@@ -14,13 +15,13 @@ var btnNewGrid = document.querySelector('.newgrid-btn');
 
 var handlePicker = function(e) {
   e.target.classList.toggle('selected');
-  console.log('picker click');
-  // while ()
+  // console.log('picker click');
+  // // while ()
 }
 
 var handleCanvas = function(e) {
 
-  console.log('canvas click');
+  // console.log('canvas click');
   if (first && first.classList.contains('selected')) {
     e.target.setAttribute("style", "background: red");
   }
@@ -30,7 +31,13 @@ var handleCanvas = function(e) {
   if (third && third.classList.contains('selected')) {
     e.target.setAttribute("style", "background: blue");
   }
+  if (e.currentTarget) {
+    e.currentTarget.setAttribute("style", "background: white");
+  }
 
 }
 picker.addEventListener('click', handlePicker);
 canvas.addEventListener('click', handleCanvas);
+// btnClr.addEventListener('click', function (e) {
+//     sq.setAttribute("style", "background: white");
+// })
