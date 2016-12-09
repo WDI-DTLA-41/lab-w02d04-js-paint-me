@@ -1,0 +1,51 @@
+body {
+  background: silver;
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 98%;
+}
+h1 {
+  color: white;
+  float: left;
+}
+.colors {
+  /*background: silver;*/
+  height: 120px;
+}
+.color-box {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  float: right;
+  margin: 4px;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.yellow {
+  background: yellow;
+}
+.white {
+  background: white;
+}
+.clicked {
+  border: 3px solid white;
+}
+button {
+  float: left;
+  padding: 4px;
+}
+table {
+  clear: both;
+  width: 100%;
+  height: 600px;
+}
+td {
+  background: white;
+  height: 25%;
+  width: 25%;
+}
