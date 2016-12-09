@@ -1,24 +1,18 @@
 console.log("hello.")
 
 var currentColor;
-// Select a color on the color picker
-// when i select a color put a border around it
-// document.querySelector('.color-selector').classList.add('selected-color')
+
+// function for choosing color
 var selectColor = function (event){
   console.log(event.target);
   console.log(event);
-  //console.log(event);
-  //event.target.classList.add('select-color');
   for (var i = 0; i < $colSelectors.children.length; i++){
     if ($colSelectors.children[i].classList.contains('active')){
       $colSelectors.children[i].classList.remove('active');
     };
   }
   event.target.classList.toggle('active');
-  //event.target.style.border = "8px solid black";
-
   currentColor = event.target.style.backgroundColor;
-//style.border = "8px solid black";
 };
 
 // Add Event Listener to color selector div for the color palette
@@ -56,3 +50,36 @@ $divTableCells = document.querySelectorAll('.divTableCell');
 
 // Add Event Listener to Button
 $clrBtn.addEventListener('click', clearGrid);
+
+
+
+
+// height = 2
+// width = 3
+
+// $divTableBody = document.querySelector('.divTableBody');
+// $divTableRow = document.querySelectorAll('.divTableRow');
+
+// var len = $divTableBody.childNodes.length;
+//   while ($divTableBody.hasChildNodes())
+//     {
+//       $divTableBody.removeChild($divTableBody.firstChild);
+//     }
+
+// // function for creation a div
+
+//   for (var i = 0; i < width; i++){
+//     tableRow = document.createElement('div');
+//     tableRow.classList.add('divTableRow');
+//     $divTableBody.appendChild(tableRow);
+//     console.log('working');
+//   };
+
+
+//   for (var i = 0; i < $divTableRow.length; i++){
+//     for (var c = 0; c < height; i++) {
+//       tableCell = document.createElement('div');
+//       tableCell.classList.add('divTableCell');
+//       $divTableRow[i].appendChild(tableCell);
+//     }
+//   }
