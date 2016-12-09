@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paint Me</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Paint Me</h1>
+  <div class="palette">
+    <div class="color red">a</div>
+    <div class="color blue">b</div>
+    <div class="color yellow active">c</div>
+  </div>
+  <table class="canvas">
+    <tr><td class="square"></td><td class="square"></td><td class="square"></td><td class="square"></td></tr>
+    <tr><td class="square"></td><td class="square"></td><td class="square"></td><td class="square"></td></tr>
+    <tr><td class="square"></td><td class="square"></td><td class="square"></td><td class="square"></td></tr>
+    <tr><td class="square"></td><td class="square"></td><td class="square"></td><td class="square"></td></tr>
+  </table>
+  <button id="clear-canvas">Clear</button>
+  <button id="new-grid">New Grid</button>
+  <form id="grid-controls" class="hide">
+    <input type="number" name="height">
+    <input type="number" name="width">
+    <button id="create-grid">Create</button>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
