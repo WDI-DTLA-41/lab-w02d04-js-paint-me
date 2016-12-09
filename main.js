@@ -13,7 +13,7 @@ var whiteBox = document.querySelector('#white');
 whiteBox.style.backgroundColor = "white";
 
 
-var colors = ["red", "blue", "yellow", "white"]; // delcare an array to contain four colors for each playable box
+var colors = ["red", "blue", "yellow"]; // delcare an array to contain four colors for each playable box
 var boxesInPlay = []; // declares an empty array that gets populated as boxes are picked
 
 // 3. when a user clicks on 1 of 3 colored boxes,
@@ -26,7 +26,7 @@ var boxesInPlay = []; // declares an empty array that gets populated as boxes ar
 //   var paintBrush ();
 // }
 
-// redBox.addEventListener('click', handleClick);
+
 
 
 
@@ -36,12 +36,19 @@ var boxesInPlay = []; // declares an empty array that gets populated as boxes ar
 whiteBox.addEventListener('click', changeColor); // when a blankBox is clicked, isTwoCards will run
 
 // changes box color
-var changeColor = function (color) {
+var changeColor = function () {
   document.querySelector('.box').style.background = color;
-}
-changeColor('green');
-
-
+// runs through color array and reassigns new color to blank
+// boxes depending on whether condition is met
+    for (var i = 0; i < colors.length; i ++) {
+      if (i % 2 === true && i % 1 === true) {
+        whiteBox.style.backgroundColor = "yellow";
+      } else if (i % 1 === true) {
+        whiteBox.style.backgroundColor = "blue";
+      } else
+        whiteBox.style.backgroundColor = "red";
+    }
+};
 
 // save later for assigning color to white boxes
 whiteBox.style.backgroundColor = "red";
@@ -54,7 +61,8 @@ whiteBox.style.backgroundColor = "yellow";
 // // 5. when clicked, the clear button resets or 'clears'
 // //   the color property of all grid boxes
 
-var isTwoBoxes = function() {
-  boxesInPlay.push(this.style.backgroundColor(box));
-    if (this.style.backgroundColor(white) != )
-}
+// Checks to see if two boxes are in play or 'clicked'
+// var isTwoBoxes = function() {
+//   boxesInPlay.push(this.style.backgroundColor(box));
+//     if (this.style.backgroundColor(white) != )
+// }
