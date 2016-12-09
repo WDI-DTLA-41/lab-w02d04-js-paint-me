@@ -1,12 +1,6 @@
-
-
-// 3. function where if user clicks colored box, change colored box to
-// different class and style with larger border
-
-// 4. function where when user clicks box in grid, change background color
-// to color of selected box
-
 var color = "";
+
+var $clear = document.querySelector('#clear');
 
 // select all color seletors and store in variable
 var $selectors = document.querySelector('#color-selectors');
@@ -18,7 +12,6 @@ var $yellow = document.querySelector('yellow');
 
 // select grid container and store in variable
 var $grid = document.querySelector('#grid');
-
 
 var selectColor = function(event) {
   if (event.target.classList.contains('color')) {
@@ -36,13 +29,19 @@ var changeColor = function(event) {
   }  if (color === "blue") {
     event.target.style.backgroundColor = "blue";
   }  if (color === "yellow") {
-    event.target.style.backgroundColor = "yellow";
+    event.target.style.backgroundColor = "yello";
   }
   console.log(event.target.style.backgroundColor);
 }
 
+var clear = function(event) {
+  for (var i=0; i<$grid.children.length; i++) {
+    $grid.children[i].style.backgroundColor = "white";
+  }
+}
+
 $selectors.addEventListener('click', selectColor);
-
 $grid.addEventListener('click', changeColor);
+$clear.addEventListener('click', clear);
 
-$grid.children[0];
+
