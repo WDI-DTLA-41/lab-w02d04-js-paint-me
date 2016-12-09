@@ -1,17 +1,10 @@
 var color = "";
-
 var $clear = document.querySelector('#clear');
-
-// select all color seletors and store in variable
 var $selectors = document.querySelector('#color-selectors');
-
-// select each colored box and store in variable
-var $red = document.querySelector('red');
-var $blue = document.querySelector('blue');
-var $yellow = document.querySelector('yellow');
-
-// select grid container and store in variable
 var $grid = document.querySelector('#grid');
+var $create = document.querySelector('#create-grid');
+var $width = document.querySelector('#width-input');
+var $height = document.querySelector('#height-input');
 
 var selectColor = function(event) {
   if (event.target.classList.contains('color')) {
@@ -31,7 +24,6 @@ var changeColor = function(event) {
   }  if (color === "yellow") {
     event.target.style.backgroundColor = "yellow";
   }
-  console.log(event.target.style.backgroundColor);
 }
 
 var clear = function(event) {
@@ -40,8 +32,20 @@ var clear = function(event) {
   }
 }
 
+var createGrid = function(event) {
+  var totalDivs = $width.value * $height.value;
+  var gridWidth = $width.value * 200 + 8;
+  $grid.innerHTML = '';
+  for (var i =0; i<totalDivs; i++) {
+    $grid.innerHTML += '<div class="cell"></div>';
+  }
+  $grid.style.maxWidth = gridWidth + 'px';
+}
+
+$create.addEventListener('click', createGrid);
 $selectors.addEventListener('click', selectColor);
 $grid.addEventListener('click', changeColor);
 $clear.addEventListener('click', clear);
+
 
 
