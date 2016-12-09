@@ -34,17 +34,18 @@ var clear = function(event) {
 
 var createGrid = function(event) {
   var totalDivs = $width.value * $height.value;
-  var gridWidth = $width.value * 200 + 8;
+  var gridWidth = ($width.value * 200) + ($width.value * 2);
+  console.log(gridWidth)
   $grid.innerHTML = '';
   for (var i =0; i<totalDivs; i++) {
     $grid.innerHTML += '<div class="cell"></div>';
   }
-  $grid.style.maxWidth = gridWidth + 'px';
+  $grid.style.width = gridWidth + 'px';
 }
 
 $create.addEventListener('click', createGrid);
 $selectors.addEventListener('click', selectColor);
-$grid.addEventListener('click', changeColor);
+$grid.addEventListener('mouseover', changeColor);
 $clear.addEventListener('click', clear);
 
 
