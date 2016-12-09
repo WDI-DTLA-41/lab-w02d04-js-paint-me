@@ -1,0 +1,60 @@
+body {
+  font-family: monospace;
+}
+
+.picker {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.selected {
+  border: 5px black solid;
+}
+
+h1 {
+  display: inline-block;
+  float: left;
+}
+
+.first-color {
+  background: red;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.second-color {
+  background: green;
+  display: inline-block;
+  height: 100px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.third-color {
+  background: blue;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+.sq {
+  /*background: lightgray;*/
+  border: 1px black solid;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.bottom {
+  display: inline-block;
+  margin: 0 auto;
+}
