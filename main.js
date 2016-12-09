@@ -45,16 +45,18 @@ clearButton.addEventListener('click', handleClear);
 
 // 'LINE-DRAW' MODE
 
-// var lineModeButton = document.querySelector('#lineMode');
-// // toggle line drawing class
-// var lineMode = function(event){
-//   event.target.classList.add(selectedColor);
-// };
+var lineModeButton = document.querySelector('#lineMode');
+// toggle line drawing class
+var lineModeToggle = function(event){
 
-// var lineModeToggle = function(event){
+}
 
-// }
+var lineMode = function(event){
+  event.target.classList.add(selectedColor);
+};
 
-// lineModeButton.addEventListener('click', )
+
+
+lineModeButton.addEventListener('click', )
 
 
