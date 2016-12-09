@@ -22,13 +22,13 @@ var handleCanvas = function(e) {
 
   console.log('canvas click');
   if (first && first.classList.contains('selected')) {
-    e.target.classList.toggle('first-color');
+    e.target.setAttribute("style", "background: red");
   }
   if (second && second.classList.contains('selected')) {
-    e.target.classList.toggle('second-color');
+    e.target.setAttribute("style", "background: green");
   }
   if (third && third.classList.contains('selected')) {
-    e.target.classList.toggle('third-color');
+    e.target.setAttribute("style", "background: blue");
   }
 
 }
