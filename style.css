@@ -1,5 +1,5 @@
 body {
-  background: turquoise;
+  background: silver;
   font-family: Arial, sans-serif;
 }
 .container {
@@ -8,10 +8,9 @@ body {
 h1 {
   color: white;
   float: left;
-  background: pink;
 }
 .colors {
-  background: silver;
+  /*background: silver;*/
   height: 120px;
 }
 .color-box {
