@@ -1,14 +1,27 @@
-var colorBox = document.querySelector('.box');
+var redBox = document.querySelector('.redBox');
+var blueBox = document.querySelector('.blueBox');
+var yellowBox = document.querySelector('.yellowBox');
+var changeColor = document.querySelectorAll('.grid')
 
-var handleSelect = function(evt) {
+var selectedColor = null;
+
+var pickAColor = function(evt){
   console.log('clicked');
-  evt.target.setAttribute('id', 'selected');
+  selectedColor =  evt.target.style.backgroundColor;
 }
 
-colorBox.addEventListener('click', handleSelect);
+var newColor = function(evt){
+  console.log('clicked');
+  evt.target.style.backgroundColor = selectedColor;
+  };
 
-// var colors = document.querySelector(".colors");
-// for (var i = 0; i <= colors.length; i++) {
-//   colorBox.addEventListener('click', handleSelect);
-// }
+redBox.addEventListener('click', pickAColor);
+
+blueBox.addEventListener('click', pickAColor);
+
+yellowBox.addEventListener('click', pickAColor);
+
+for (var i = 0; i < changeColor.length; i++) {
+  changeColor[i].addEventListener('click', newColor);
+}
 
