@@ -1,0 +1,50 @@
+body {
+  background-color: lightblue;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* {
+  width: 8em;
+  height: 8em;
+  border: 1px solid black;
+}*/
+
+button {
+  margin: 1.5em 0;
+  font-size: 1em;
+  background-color: green;
+}
+
+.divTableCell {
+  border: 1px solid black;
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+  background-color: white;
+}
+
+.redBox {
+  border: 1px solid black;
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+}
+.blueBox {
+  border: 1px solid black;
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+}
+.yellowBox {
+  border: 1px solid black;
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+}
+
+.active {
+  border: 5px solid black;
+}
