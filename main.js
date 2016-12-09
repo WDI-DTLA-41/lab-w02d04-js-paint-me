@@ -7,9 +7,9 @@ var gridContainer = document.querySelector('#grid-container');
 var palleteGreen = document.querySelector('.pallete-green');
 var palleteRed = document.querySelector('.pallete-red');
 var palleteBlue = document.querySelector('.pallete-blue');
-
+var palleteClear = document.querySelectorAll('.clear');
 var buttonClass
-
+var buttonContainer = document.querySelector('#button-container');
 // create a function to create Grid Table
 // var createTable = function() {
   for(var i = 0; i < 3; i++) {
@@ -26,6 +26,9 @@ var buttonClass
   }
 
 
+
+
+
 // createTable();
 
 
@@ -36,8 +39,10 @@ var handleColorGrid = function(event) {
     event.target.classList.toggle('green');
   } else if (buttonClass === palleteRed.classList) {
     event.target.classList.toggle('red');
-  } else {
+  } else if (buttonClass === palleteBlue.classList) {
     event.target.classList.toggle('blue');
+  } else {
+    event.target.classList.toggle('clear');
   }
 }
 
@@ -47,7 +52,22 @@ var handleColorTag = function(event) {
   gridContainer.addEventListener('click', handleColorGrid);
 }
 
+var handleClearGrid = function(event) {
+  var tdAll = document.querySelectorAll('td');
+  console.log(tdAll);
+   for(var i = 0; i < tdAll.length; i++) {
+      tdAll[i].classList.remove('palleteRed','palleteGreen','palleteBlue');
+  }
+}
+
+
+
+
+
+
+
+
 
 // event listener for clicks
 palleteContainer.addEventListener('click',handleColorTag);
-
+buttonContainer.addEventListener('click',handleClearGrid);

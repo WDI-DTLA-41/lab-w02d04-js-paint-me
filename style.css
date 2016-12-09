@@ -48,6 +48,10 @@ body {
   clear: both;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 td {
   border: 2px solid black;
   height: 200px;
@@ -67,7 +71,7 @@ td {
 }
 
 .clear {
-
+  background: beige;
 }
 
 #button-container {
