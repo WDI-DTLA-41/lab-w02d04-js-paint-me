@@ -24,3 +24,8 @@ div {
 .row {
   display: inline-block;
 }
+
+table {
+  border: lightgray;
+}
+
