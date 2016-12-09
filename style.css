@@ -1,3 +1,4 @@
+
 header {
   margin-bottom:25px;
 }
@@ -8,12 +9,23 @@ h1 {
   margin:0;
 }
 
+td {
+  width:10%;
+  border:1px grey solid;
+}
+
 .boxHeader{
   width:150px;
   height:150px;
   border:1px black solid;
   float:right;
   margin:15px;
+
+}
+
+.boxHeader:hover {
+  border:5px black solid;
+  cursor:pointer;
 
 }
 
@@ -28,6 +40,13 @@ h1 {
   text-align:center;
   line-height:35px;
   float:right;
+}
+
+.btnSet:hover {
+  border:5px black solid;
+  background:grey;
+  color:red;
+  cursor:pointer;
 }
 
 #redBox {
@@ -52,10 +71,11 @@ h1 {
 }
 
 #grid {
-  width:800px;
-  height:500px;
+  min-width:800px;
+  min-height:500px;
   border:3px grey solid;
   margin-bottom:15px;
+  border-collapse:collapse;
 }
 
 #newGrid {
