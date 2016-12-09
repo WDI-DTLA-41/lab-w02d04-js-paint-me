@@ -9,6 +9,11 @@ tr {
   /*width: 90%;*/
 }
 
+img {
+  height: 13px;
+  width: 13px;
+}
+
 #grid {
   border-collapse: collapse;
 }
