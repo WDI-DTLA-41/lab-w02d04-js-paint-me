@@ -1,12 +1,12 @@
 console.log('hello');
 
 // 1. create palette of 3 boxes with colored backgrounds (red, blue, yellow)
-var redBox = document.querySelector('#red');
-var blueBox = document.querySelector('#blue');
-var yellowBox = document.querySelector('#yellow');
+var redBox = document.querySelector('td[name="red"]');
+// var blueBox = document.querySelector('#blue');
+// var yellowBox = document.querySelector('#yellow');
 redBox.style.backgroundColor = "red";
-blueBox.style.backgroundColor = "blue";
-yellowBox.style.backgroundColor = "yellow";
+// blueBox.style.backgroundColor = "blue";
+// yellowBox.style.backgroundColor = "yellow";
 
 // 2. create a canvas of 12 boxes with white background
 var whiteBox = document.querySelector('#white');
@@ -26,7 +26,12 @@ var boxesInPlay = []; // declares an empty array that gets populated as boxes ar
 //   var paintBrush ();
 // }
 
-
+var getColors = function (){
+  return {                    // returns output as objects
+    name: redBox.value,
+    backgroundColor: "red"
+  }
+}
 
 
 
