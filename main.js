@@ -36,10 +36,13 @@ var handleColorGrid = function(event) {
   console.log(event.target.classList);
   console.log(buttonClass);
   if (buttonClass === palleteGreen.classList) {
+    event.target.classList = '';
     event.target.classList.toggle('green');
   } else if (buttonClass === palleteRed.classList) {
+    event.target.classList = '';
     event.target.classList.toggle('red');
   } else if (buttonClass === palleteBlue.classList) {
+    event.target.classList = '';
     event.target.classList.toggle('blue');
   } else {
     event.target.classList.toggle('clear');
@@ -56,7 +59,7 @@ var handleClearGrid = function(event) {
   var tdAll = document.querySelectorAll('td');
   console.log(tdAll);
    for(var i = 0; i < tdAll.length; i++) {
-      tdAll[i].classList.remove('palleteRed','palleteGreen','palleteBlue');
+      tdAll[i].classList = '';
   }
 }
 
