@@ -1,4 +1,4 @@
-# 🎨 Paint Me! 
+
 
 A client would like you to build a simple painting app.
 
