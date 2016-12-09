@@ -8,7 +8,7 @@ body {
   border:  2px solid black;
   display: inline-block;
   float: right;
-  margin: ;
+  margin: 8px;
 }
 
 .color-selectors {
@@ -31,7 +31,7 @@ body {
   height: 125px;
   border: 2px solid red;
   display: inline-block;
-  margin: 4px;
+  margin: 0 auto;
   background-color: white;
 }
 

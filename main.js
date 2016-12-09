@@ -1,6 +1,17 @@
 console.log("hello.")
 
+// Contains currently selected color
 var currentColor;
+
+// Get all divTableCells
+$divTableCells = document.querySelectorAll('.divTableCell');
+
+// Get all color selectors
+$colSelectors = document.querySelector('.color-selectors');
+
+// Get Clear Button
+$clrBtn = document.querySelector('.clearGrid');
+
 
 // function for choosing color
 var selectColor = function (event){
@@ -16,24 +27,30 @@ var selectColor = function (event){
 };
 
 // Add Event Listener to color selector div for the color palette
-$colSelectors = document.querySelector('.color-selectors')
 $colSelectors.addEventListener('click', selectColor);
 
 
 // Function for changing color
 var applyColor = function (event) {
-  // console.log(event.target);
-  // console.log(event);
+  console.log('target',event.target); // element clicked on
+  console.log('currentTarget',event.currentTarget);
   event.target.style.backgroundColor = currentColor;
 
 };
 
 // Add Event Listener on divTable for changing color
-$divTable = document.querySelector('.divTable');
-$divTable.addEventListener('click', applyColor);
+// $divTable = document.querySelector('.divTable');
+// $divTable.addEventListener('click', applyColor);
 
 
 
+
+for (var i = 0; i < $divTableCells.length; i++){
+  $divTableCells[i].addEventListener('click', applyColor);
+};
+
+
+// Clear Grid
 // Clear grid function
 var clearGrid = function (){
   for (i = 0; i < $divTableCells.length; i++) {
@@ -41,14 +58,7 @@ var clearGrid = function (){
   };
 };
 
-
-// Clear Grid
-$clrBtn = document.querySelector('.clearGrid');
-// get all divTableCells
-$divTableCells = document.querySelectorAll('.divTableCell');
-//$test.style.backgroundColor = null;
-
-// Add Event Listener to Button
+// Add Event Listener to Clear Button
 $clrBtn.addEventListener('click', clearGrid);
 
 
