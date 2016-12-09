@@ -1,0 +1,31 @@
+div {
+  border: 1px solid lightgray;
+  height: 100px;
+  width: 100px;
+}
+
+.pallet {
+  display: inline-block;
+  float: right;
+}
+
+#red {
+  background: red;
+}
+
+#blue {
+  background: blue;
+}
+
+#yellow {
+  background: yellow;
+}
+
+.row {
+  display: inline-block;
+}
+
+table {
+  border: lightgray;
+}
+
