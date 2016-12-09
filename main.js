@@ -74,10 +74,10 @@ var newGrid = function(height, width) {
   newTd;
   newTr.innerHTML="<tr></tr>";
   newTd.innerHTMl="<td></td>";
-  newTable.appendChild(body);
-  newTbody.appendChild(newTable);
-  newTr.appendChild(newTbody);
-  newTd.appendChild(newTr);
+  document.body.appendChild(table);
+  // newTbody.appendChild(newTable);
+  tbody.appendChild(newTr);
+  newTr.appendChild(newTd);
 }
 
 //event listeners!
