@@ -1,0 +1,39 @@
+h1 {
+  position: relative;
+  left: 300px;
+}
+
+.redBox {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.blueBox {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.yellowBox {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.board {
+  max-width: 450px;
+  height: 450px;
+  position: absolute;
+  left: 150px;
+
+}
+.grid {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  color: white;
+}
+
+
