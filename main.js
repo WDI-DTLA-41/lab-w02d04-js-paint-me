@@ -2,6 +2,7 @@ var redBox = document.querySelector('.redBox');
 var blueBox = document.querySelector('.blueBox');
 var yellowBox = document.querySelector('.yellowBox');
 var changeColor = document.querySelectorAll('.grid')
+var clear = document.querySelector('button');
 
 var selectedColor = null;
 
@@ -24,4 +25,15 @@ yellowBox.addEventListener('click', pickAColor);
 for (var i = 0; i < changeColor.length; i++) {
   changeColor[i].addEventListener('click', newColor);
 }
+
+var clearPaint = function(){
+  console.log('clicked');
+for (var i = 0; i < changeColor.length; i++) {
+  changeColor[i].style.backgroundColor = 'white';
+  }
+}
+
+clear.addEventListener('click', clearPaint);
+
+
 

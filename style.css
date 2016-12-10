@@ -3,31 +3,19 @@ h1 {
   left: 300px;
 }
 
-.colors {
-  position: absolute;
-  left: 215px;
-  display: inline-block;
-}
-
 .redBox {
-  background: red;
-  color: red;
   display: inline-block;
   height: 100px;
   width: 100px;
 }
 
 .blueBox {
-  background: blue;
-  color: blue;
   display: inline-block;
   height: 100px;
   width: 100px;
 }
 
 .yellowBox {
-  background: yellow;
-  color: yellow;
   display: inline-block;
   height: 100px;
   width: 100px;
@@ -35,8 +23,7 @@ h1 {
 
 .board {
   max-width: 450px;
-  height: 550px;
-  padding: 100px 0 0 0;
+  height: 450px;
   position: absolute;
   left: 150px;
 
