@@ -12,8 +12,8 @@ cell.appendChild(row);
 var renderRow = function() {
   var tr = document.createElement('tr');
   var td = document.createElement('td');
-    tr.appendChild(td);
-    td = document.createElement('td');
+      tr.appendChild(td);
+      td = document.createElement('td');
       tr.appendChild(td);
       td = document.createElement('td');
       tr.appendChild(td);
@@ -23,7 +23,6 @@ var renderRow = function() {
 
   forEach(row,renderRow);
 }
-
 var row = renderRow();
 tbody.appendChild(row);
 var row = renderRow();
