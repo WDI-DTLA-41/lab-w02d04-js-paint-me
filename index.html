@@ -1,54 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Paint Me</title>
+
 </head>
 <body>
   <section>
 
+        <div>
+            <h1>Paint Me</h1>
+        </div>
 
-    <div>
-        <h1>Paint Me</h1>
-    </div>
+        <header id="main">
+            <div class="coloredBox" id="orangeBox"></div>
+            <div class="coloredBox" id="greenBox"></div>
+            <div class="coloredBox" id="blueBox"></div>
+        </header>
 
         <div id="container">
+              <table id="grid"></table>
+        </div>
 
-            <div id="startAgain">
-              <div class="lightBlueBox" color="lightblue"></div>
-              <div class="greenBox" color="green"></div>
-              <div class="blueBox" color="blue"></div>
-            </div>
-
-              <div class="row1">
-
-                        <div id="box-one" class="box">1</div>
-                        <div id="box-two" class="box">2</div>
-                        <div id="box-three" class="box">3</div>
-
-              </div>
-
-              <div class="row2">
-
-                        <div id="box-four" class="box">1</div>
-                        <div id="box-five" class="box">2</div>
-                        <div id="box-six" class="box">3</div>
-
-              </div>
-
-              <div class="row3">
-
-                        <div id="box-seven" class="box">1</div>
-                        <div id="box-eight" class="box">2</div>
-                        <div id="box-nine" class="box">3</div>
-
-              </div>
-
-
-                    <button class="clear">Clear</button>
-                    <button class="newGrid">New Grid</button>
-
-              </div>
+        <div>
+            <button class="btnSet" id="clear">Clear Grid</button>
+        </div>
 
 </section>
 
