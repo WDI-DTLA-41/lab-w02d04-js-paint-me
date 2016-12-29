@@ -9,6 +9,7 @@ var selectColor = function(){
 swatch.addEventListener('click', selectColor);
 
 
+
 var colorGrid = function(){
   // add or toggle
   var changeColor = event.target.classList.toggle(storeColor);
