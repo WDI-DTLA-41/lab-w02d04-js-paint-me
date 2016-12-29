@@ -28,11 +28,11 @@ var getHeightAndWidth = function() {
 var renderGrid = function(grid) {
   var html = '';
   for (var i = 0; i < grid.height; i++) {
-    html += '<tr>'
+    html += '<div class="row">'
     for (var j = 0; j < grid.width; j++) {
-      html += '<td class="square"></td>'
+      html += '<div class="square"></div>'
     }
-    html += '</tr>'
+    html += '</div>'
   }
   return html;
 }
