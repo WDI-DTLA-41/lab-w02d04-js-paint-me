@@ -1,35 +1,32 @@
-// console.log("^^^^^^^^");
-
-// query selector
-var button = document.querySelector('.clear');
-var color1 = document.querySelector('.color1');
-var color2 = document.querySelector('.color2');
-var color3 = document.querySelector('.color3');
-var td = document.querySelectorAll('td');
-
-// console.log(td);
-
-// function somethingClicked(event){
-//   console.log(event.target);
-//   console.log('clicked');
-// }
-
-// td.addEventListener('click', somethingClicked);
-
-td.forEach(function(element){
-  console.log(element);
-  element.addEventListener('click', clickCheck);
-});
+var swatch = document.querySelector('.swatch');
+var grid = document.querySelector('.grid');
 
 
-function clickCheck(){
-  console.log(this);
-  // add class of .color1
-  // this.classList('.color1');
-  this.setAttribute('class', 'color1');
+var selectColor = function(){
+  storeColor = event.target.classList;
+  console.log(storeColor);
+};
+swatch.addEventListener('click', selectColor);
+
+
+var colorGrid = function(){
+  // add or toggle
+  var changeColor = event.target.classList.toggle(storeColor);
+  console.log(changeColor);
 }
 
-color1.addEventListener('click', clickCheck);
+grid.addEventListener('click', colorGrid);
 
 
 
+
+
+
+var button = document.querySelector('.clear');
+
+
+
+// click on one color
+// consolelog value of that color
+// save that color to that variable
+// change class of grid to that variable
