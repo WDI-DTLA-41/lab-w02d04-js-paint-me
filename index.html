@@ -11,21 +11,35 @@
 <body>
 
   <h1>Paint Me!</h1>
-<div class='boxes'>
-  <div id="red"></div>
-  <div id="yellow"></div>
-  <div id="blue"></div>
+  <div class="boxes">
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="blue"></div>
+  </div>
+
+  <div class="board">
+  <div class="row">
+    <div class="square" id ="1" data-row="0" data-col="0"></div>
+    <div class="square" id ="2" data-row="0" data-col="1"></div>
+    <div class="square" id ="3" data-row="0" data-col="2"></div>
+    <div class="square" id ="four" data-row="0" data-col="3"></div>
+  </div>
+  <div class="row">
+    <div class="square" id ="5" data-row="1" data-col="0"></div>
+    <div class="square" id ="6" data-row="1" data-col="1"></div>
+    <div class="square" id ="7" data-row="1" data-col="2"></div>
+    <div class="square" id ="8" data-row="1" data-col="3"></div>
+  </div>
+  <div class="row">
+    <div class="square" id ="9" data-row="2" data-col="0"></div>
+    <div class="square" id ="10" data-row="2" data-col="1"></div>
+    <div class="square" id ="11" data-row="2" data-col="2"></div>
+    <div class="square" id ="12" data-row="2" data-col="3"></div>
+  </div>
 </div>
 
-<div id="table">
-<table>
-  <tbody>
-
-  </tbody>
-</table>
-</div>
-
-<button>Clear</button>
+<button class="button" id="clear">Clear</button>
+<button class="button" id="grid">Make Grid</button>
 <script src="main.js"></script>
 </body>
 </html>
