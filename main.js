@@ -1,29 +1,7 @@
 var swatch = document.querySelector('.swatch');
 var grid = document.querySelector('.grid');
 var button = document.querySelector('.clear');
-<<<<<<< HEAD
 
-=======
-var color1 = document.querySelector('.color1');
-var color2 = document.querySelector('.color2');
-var color3 = document.querySelector('.color3');
-var cell1 = document.querySelectorAll('.cell1');
-
-// function clickColor(){
-//   if (color1.clicked == true) {
-//   cell1.addClassList('.color1');
-//   }
-// };
-
-// color1.addEventListener('click', clickColor);
-
-
-
-
-
-
-// // console.log(td);
->>>>>>> 7b2c09609c0e1a87fa4a411fa19a0c7cec4c746d
 
 
 // =========================
@@ -47,17 +25,7 @@ var colorGrid = function(){
   console.log(changeColor);
 };
 
-<<<<<<< HEAD
 grid.addEventListener('click', colorGrid);
-=======
-// function handleClick(){
-//   var color2 = getValues();
-//   var storeColor = color2;
-//   this.classList.toggle(".color2")
-// }
-
-// button.addEventListener('click', handleClick);
->>>>>>> 7b2c09609c0e1a87fa4a411fa19a0c7cec4c746d
 
 
 
